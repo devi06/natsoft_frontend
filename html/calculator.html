@@ -1,42 +1,16 @@
 <html>
     <head>
-        <title>
-            calculator
-        </title>
+        <title>Calculator</title>
         <script src="../js/calculator.js"></script>
     </head>
     <body>
-        <table style="border: black; background-color: burlywood;">
-            <tr>
-                <td colspan="3"><input type="text" placeholder="result" id="result"> 
-                </td>
-                <td><input type="button" value="clear" onclick="clearData()"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="1" onclick="displayData(1)"></td>
-                <td><input type="button" value="2" onclick="displayData(2)"></td>
-                <td><input type="button" value="3" onclick="displayData(3)"></td>
-                <td><input type="button" value="/" onclick="displayData('/')"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="4" onclick="displayData(4)"></td>
-                <td><input type="button" value="5" onclick="displayData(5)"></td>
-                <td><input type="button" value="6" onclick="displayData(6)"></td>
-                <td><input type="button" value="-" onclick="displayData('-')"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="7" onclick="displayData(7)"></td>
-                <td><input type="button" value="8" onclick="displayData(8)"></td>
-                <td><input type="button" value="9" onclick="displayData(9)"></td>
-                <td><input type="button" value="+" onclick="displayData('+')"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="." onclick="displayData('.')"></td>
-                <td><input type="button" value="0" onclick="displayData(0)"></td>
-                <td><input type="button" value="=" onclick="resultData()"></td>
-                <td><input type="button" value="*" onclick="displayData('*')"></td>
-            </tr>
-
-        </table>
+        <input type="number" id="first" placeholder="type first number"><br/><br/>
+        <input type="number" id="second" placeholder="type second number"><br/><br/>
+        <input type="text" id="res1"><br/><br/>
+        <input type="submit" value="+" onclick="addition()">
+        <input type="submit" value="-" onclick="sub()">
+        <input type="submit" value="*" onclick="mul()">
+        <input type="submit" value="/" onclick="div()">
+        
     </body>
 </html>
