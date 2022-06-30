@@ -36,3 +36,16 @@ function div(){
     var result = Number(n1) / Number(n2)
     document.getElementById('res1').value = result
 }
+
+
+
+
+function timestamphome(){
+var date;
+date = new Date();
+var time = document.getElementById('timediv'); 
+ time.innerHTML = date.toLocaleTimeString();
+}
+
+var interval = setInterval(timestamphome, 1000);
+ 
